@@ -7,6 +7,7 @@ import { Oscar } from "./components/Oscar";
 import { Button } from "./components/Button";
 import "./App.css";
 import { Input } from "./components/input";
+import { Container } from "./components/Container";
 
 function App() {
 	const personName = {
@@ -53,7 +54,7 @@ function App() {
 
 				<h3 className='videoTopic'>
 					<hr />
-					Event Props
+					Event Props (console logs)
 				</h3>
 				<Button
 					handleClick={(event, id) => {
@@ -62,6 +63,14 @@ function App() {
 				></Button>
 				<Input value='' handleChange={(event) => console.log(event)}></Input>
 			</div>
+
+			<h3 className='videoTopic'>
+				<hr />
+				Style Props
+			</h3>
+			<Container
+				styles={{ border: "1px solid black", padding: "1rem" }}
+			></Container>
 		</>
 	);
 }
