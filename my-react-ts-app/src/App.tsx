@@ -6,8 +6,9 @@ import { Heading } from "./components/Heading";
 import { Oscar } from "./components/Oscar";
 import { Button } from "./components/Button";
 import "./App.css";
-import { Input } from "./components/input";
+import { Input } from "./components/Input";
 import { Container } from "./components/Container";
+import { User } from "./components/state/User";
 
 function App() {
 	const personName = {
@@ -71,6 +72,12 @@ function App() {
 			<Container
 				styles={{ border: "1px solid black", padding: "1rem" }}
 			></Container>
+
+			<h3 className='videoTopic'>
+				<hr />
+				useState Hook
+			</h3>
+			<User></User>
 		</>
 	);
 }
