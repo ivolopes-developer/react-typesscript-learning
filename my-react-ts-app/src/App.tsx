@@ -9,6 +9,7 @@ import "./App.css";
 import { Input } from "./components/Input";
 import { Container } from "./components/Container";
 import { User } from "./components/state/User";
+import { Counter } from "./components/state/Counter";
 
 function App() {
 	const personName = {
@@ -78,6 +79,12 @@ function App() {
 				useState Hook
 			</h3>
 			<User></User>
+
+			<h3 className='videoTopic'>
+				<hr />
+				UseReducer Hook
+			</h3>
+			<Counter></Counter>
 		</>
 	);
 }
