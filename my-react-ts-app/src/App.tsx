@@ -8,10 +8,12 @@ import { Button } from "./components/Button";
 import "./App.css";
 import { Input } from "./components/Input";
 import { Container } from "./components/Container";
-import { User } from "./components/state/User";
+import { UserState } from "./components/state/User";
 import { Counter } from "./components/state/Counter";
 import { ThemeContextProvider } from "./components/Context/ThemeContext";
 import { Box } from "./components/Context/Box";
+import { UserContextProvider } from "./components/Context/UserContext";
+import { User } from "./components/Context/User";
 
 function App() {
 	const personName = {
@@ -80,7 +82,7 @@ function App() {
 				<hr />
 				useState Hook
 			</h3>
-			<User></User>
+			<UserState></UserState>
 
 			<h3 className='videoTopic'>
 				<hr />
@@ -95,6 +97,14 @@ function App() {
 			<ThemeContextProvider>
 				<Box></Box>
 			</ThemeContextProvider>
+
+			<h3 className='videoTopic'>
+				<hr />
+				useContext Future Value
+			</h3>
+			<UserContextProvider>
+				<User></User>
+			</UserContextProvider>
 		</>
 	);
 }
