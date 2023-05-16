@@ -10,6 +10,8 @@ import { Input } from "./components/Input";
 import { Container } from "./components/Container";
 import { User } from "./components/state/User";
 import { Counter } from "./components/state/Counter";
+import { ThemeContextProvider } from "./components/Context/ThemeContext";
+import { Box } from "./components/Context/Box";
 
 function App() {
 	const personName = {
@@ -85,6 +87,14 @@ function App() {
 				UseReducer Hook
 			</h3>
 			<Counter></Counter>
+
+			<h3 className='videoTopic'>
+				<hr />
+				useContext Hook
+			</h3>
+			<ThemeContextProvider>
+				<Box></Box>
+			</ThemeContextProvider>
 		</>
 	);
 }
