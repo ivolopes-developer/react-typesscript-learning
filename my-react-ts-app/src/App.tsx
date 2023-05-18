@@ -16,6 +16,7 @@ import { UserContextProvider } from "./components/Context/UserContext";
 import { User } from "./components/Context/User";
 import DomRef from "./components/ref/DomRef";
 import { MutableRef } from "./components/ref/MutableRef";
+import { CounterClass } from "./components/class/CounterClass";
 
 function App() {
 	const personName = {
@@ -114,6 +115,12 @@ function App() {
 			</h3>
 			<DomRef></DomRef>
 			<MutableRef></MutableRef>
+
+			<h3 className='videoTopic'>
+				<hr />
+				Class Component
+			</h3>
+			<CounterClass message='The count value is'></CounterClass>
 		</>
 	);
 }
