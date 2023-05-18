@@ -105,6 +105,11 @@ function App() {
 			<UserContextProvider>
 				<User></User>
 			</UserContextProvider>
+
+			<h3 className='videoTopic'>
+				<hr />
+				useRef Hook
+			</h3>
 		</>
 	);
 }
