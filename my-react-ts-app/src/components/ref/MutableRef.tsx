@@ -22,7 +22,7 @@ export const MutableRef = () => {
 		return () => {
 			stopTimer();
 		};
-	}, []);
+	}, [timer]);
 
 	return (
 		<div>
