@@ -22,6 +22,7 @@ import { Profile } from "./components/auth/Profile";
 import { Toast } from "./components/templateliterals/Toast";
 import { CustomButton } from "./components/html/Button";
 import { CustomComponent } from "./components/html/CustomComponent";
+import { Text } from "./components/polymorphic/text";
 
 function App() {
 	const personName = {
@@ -155,6 +156,20 @@ function App() {
 				name='Ivanka o Lopes'
 				isLoggedIn={true}
 			></CustomComponent>
+
+			<h3 className='videoTopic'>
+				<hr />
+				Polymorphic Components
+			</h3>
+			<Text as='h1' size='lg'>
+				Heading
+			</Text>
+			<Text as='p' size='md'>
+				Paragraph
+			</Text>
+			<Text as='label' htmlFor='someId' size='lg' color='secondary'>
+				Label
+			</Text>
 		</>
 	);
 }
