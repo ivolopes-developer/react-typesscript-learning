@@ -19,6 +19,7 @@ import { MutableRef } from "./components/ref/MutableRef";
 import { CounterClass } from "./components/class/CounterClass";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
+import { Toast } from "./components/templateliterals/Toast";
 
 function App() {
 	const personName = {
@@ -129,6 +130,12 @@ function App() {
 				Component Prop
 			</h3>
 			<Private isLoggedIn={true} component={Profile}></Private>
+
+			<h3 className='videoTopic'>
+				<hr />
+				Template literals and Exclude
+			</h3>
+			<Toast position='center'></Toast>
 		</>
 	);
 }
