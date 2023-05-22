@@ -21,6 +21,7 @@ import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { Toast } from "./components/templateliterals/Toast";
 import { CustomButton } from "./components/html/Button";
+import { CustomComponent } from "./components/html/CustomComponent";
 
 function App() {
 	const personName = {
@@ -145,6 +146,15 @@ function App() {
 			<CustomButton variant='primary' onClick={() => console.log("clicked")}>
 				Primary Button
 			</CustomButton>
+
+			<h3 className='videoTopic'>
+				<hr />
+				Extracting a Components Prop Types
+			</h3>
+			<CustomComponent
+				name='Ivanka o Lopes'
+				isLoggedIn={true}
+			></CustomComponent>
 		</>
 	);
 }
