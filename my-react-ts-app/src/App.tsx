@@ -20,6 +20,7 @@ import { CounterClass } from "./components/class/CounterClass";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { Toast } from "./components/templateliterals/Toast";
+import { CustomButton } from "./components/html/Button";
 
 function App() {
 	const personName = {
@@ -136,6 +137,14 @@ function App() {
 				Template literals and Exclude
 			</h3>
 			<Toast position='center'></Toast>
+
+			<h3 className='videoTopic'>
+				<hr />
+				Wrapping HTML Elements
+			</h3>
+			<CustomButton variant='primary' onClick={() => console.log("clicked")}>
+				Primary Button
+			</CustomButton>
 		</>
 	);
 }
